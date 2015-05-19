@@ -21,10 +21,12 @@ Run `docker-compose build`. It will
 * expose port 8080 to the host
 * instruct the container to execute `nodemon index.js` on start up.
 
-## Start
+## Start containers
 
 Run `docker-compose up` to create a nginx container and proxy to 2 node containers which connect to postgres container. 
 The app should then be running on your docker daemon on port 80 (On OS X you can use `boot2docker ip` to find out the IP address).
 
 
+## Destroy containers
 
+Run `docker-compose rm`
