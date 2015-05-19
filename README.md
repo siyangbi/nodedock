@@ -1,7 +1,5 @@
 # Node Express app with nginx postgres nodemon dev cluster
 
-Use [nodemon's](https://github.com/remy/nodemon) legacy mode to monitor file changes in your container. The app will restart, if you change any **.js**, **.json** or **.hjs** file.
-
 ## Prerequisites
 
 Install [Docker](https://www.docker.com/) on your system.
