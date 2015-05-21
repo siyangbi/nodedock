@@ -17,13 +17,21 @@ Run `docker-compose build`. It will
 
 * install [nodemon](https://github.com/remy/nodemon) globally in your container
 * install all dependencies from the package.json locally
-* expose port 8080 to the host
 * instruct the container to execute `nodemon index.js` on start up.
 
 ## Start containers
 
-Run `docker-compose up` to create a nginx container and proxy to 2 node containers which connect to postgres container. 
+Run `docker-compose up` to
+* create postgres container  
+* create elastic search container
+* create 2 node app containers link to postgres and elastic search
+* create a nginx container and proxy to 2 node app containers
 The app should then be running on your docker daemon on port 80 (On OS X you can use `boot2docker ip` to find out the IP address).
+
+
+## Connect postgres from terminal
+
+psql -h [boot2docker host] -U youruser
 
 
 ## Destroy containers
