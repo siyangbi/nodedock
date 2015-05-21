@@ -33,4 +33,4 @@ postgres:
         - POSTGRES_USER=youruser
         - POSTGRES_PASSWORD=yourpw
     ports:
-        - "5432"
+        - "5432:5432"
