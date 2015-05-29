@@ -8,15 +8,17 @@ Install [Docker](https://www.docker.com/) on your system.
 
 Install [Docker Compose](http://docs.docker.com/compose/) on your system.
 
-* ``curl -L https://github.com/docker/compose/releases/download/1.2.0/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
-    chmod +x /usr/local/bin/docker-compose``
+* ``curl -L https://github.com/docker/compose/releases/download/1.2.0/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose``
+* ``chmod +x /usr/local/bin/docker-compose``
+
 
 ## Setup
+
+Run `npm install` in node folder
 
 Run `docker-compose build`. It will
 
 * install [nodemon](https://github.com/remy/nodemon) globally in your container
-* install all dependencies from the package.json locally
 * instruct the container to execute `nodemon index.js` on start up.
 
 ## Start containers
