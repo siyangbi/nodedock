@@ -41,3 +41,10 @@ psql -h [boot2docker host] -U youruser
 ## Destroy containers
 
 Run `docker-compose rm`
+
+
+
+
+## ToDo
+redis
+
