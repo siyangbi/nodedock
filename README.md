@@ -31,6 +31,8 @@ The app should then be running on your docker daemon on port 80 (On OS X you can
 
 ## Connect postgres from terminal
 
+Run `boot2docker ip` to get boot2docker host 
+
 psql -h [boot2docker host] -U youruser
 
 
