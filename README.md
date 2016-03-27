@@ -48,3 +48,36 @@ Run `docker-compose rm`
 ## ToDo
 redis
 
+
+# How to use this repo after install docker-machine
+
+## docker
+
+clone this repo into your own disk
+
+Try for the following commond
+
+`docker-machine version` 
+
+`docker-machine ls` 
+
+`docker-machine env default`  
+
+`docker-machine env`
+
+
+start the default container `docker-machine start` 
+
+`docker-machine run hello-world` 
+
+if doesn't show hello from docker then try the following commond
+
+    `eval "$(docker-machine env default)"`
+
+the repo run `docker-compose up`
+
+run `docker-compose up` everytime when you try to build your website
+
+done!
+
+
