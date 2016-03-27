@@ -55,7 +55,7 @@ redis
 
 clone this repo into your own disk
 
-Try for the following commond
+Try for the following command
 
 `docker-machine version` 
 
@@ -70,7 +70,7 @@ start the default container `docker-machine start`
 
 `docker-machine run hello-world` 
 
-if doesn't show hello from docker then try the following commond
+if doesn't show hello from docker then try the following command
 
     `eval "$(docker-machine env default)"`
 
