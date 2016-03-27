@@ -74,7 +74,7 @@ if doesn't show hello from docker then try the following command
 
     `eval "$(docker-machine env default)"`
 
-the repo run `docker-compose up`
+in the repo run `docker-compose up`
 
 run `docker-compose up` everytime when you try to build your website
 
