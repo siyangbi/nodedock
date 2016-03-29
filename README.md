@@ -48,7 +48,7 @@ Run `docker-compose up` to
 * create elastic search container
 * create 2 node app containers link to postgres and elastic search
 * create a nginx container and proxy to 2 node app containers
-The app should then be running on your docker daemon on port 80 (On OS X you can use `boot2docker ip` to find out the IP address).
+The app should then be running on your docker daemon on port 80 (On OS X you can use `docker-machine env` to find out the IP address).
 
 
 ## Connect postgres from terminal
