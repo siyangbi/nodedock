@@ -59,20 +59,20 @@ Try for the following command
 
 Run `docker-machine version` 
 
-    `docker-machine ls` 
+Run `docker-machine ls` 
 
-    `docker-machine env default`  
+Run `docker-machine env default`  
 
-    `docker-machine env`
+Run `docker-machine env`
 
 
-start the default container `docker-machine start` 
+start the default container  Run `docker-machine start` 
 
-    `docker-machine run hello-world` 
+Run `docker-machine run hello-world` 
 
 if doesn't show hello from docker then try the following command
 
-    `eval "$(docker-machine env default)"`
+Run `eval "$(docker-machine env default)"`
 
 in the repo run `docker-compose up`
 
