@@ -57,7 +57,7 @@ clone this repo into your own disk
 
 Try for the following command
 
-    `docker-machine version` 
+Run `docker-machine version` 
 
     `docker-machine ls` 
 
