@@ -10,7 +10,7 @@ Install [Docker](https://www.docker.com/) on your system.
 
 # How to use this repo after install docker-machine
 
-## docker
+## Docker
 
 clone this repo into your own disk
 
