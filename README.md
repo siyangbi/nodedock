@@ -57,18 +57,18 @@ clone this repo into your own disk
 
 Try for the following command
 
-`docker-machine version` 
+    `docker-machine version` 
 
-`docker-machine ls` 
+    `docker-machine ls` 
 
-`docker-machine env default`  
+    `docker-machine env default`  
 
-`docker-machine env`
+    `docker-machine env`
 
 
 start the default container `docker-machine start` 
 
-`docker-machine run hello-world` 
+    `docker-machine run hello-world` 
 
 if doesn't show hello from docker then try the following command
 
