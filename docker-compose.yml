@@ -1,45 +1,40 @@
-nginx:
-    build: ./nginx
-    links:
-        - node1:node1
-        - node2:node2
-    ports:
-        - "80:80"
-node1:
-    build: ./node
+version: '2'
+services:
+  applications:
+    image: tianon/true
     volumes:
-        - ./node/.:/src
-    environment:
-        - POSTGRES_USER=youruser
-        - POSTGRES_PASSWORD=yourpw
-    links:
-        - postgres
-        - elasticsearch
-    ports:
-        - "8080"
-node2:
+    - ../:/opt/app
+  node:
     build: ./node
-    volumes:
-        - ./node/.:/src
     environment:
-        - POSTGRES_USER=youruser
-        - POSTGRES_PASSWORD=yourpw
+      MYSQL_URL: mysql://root:root@mysql:3306/nodedock
+    volumes_from:
+      - applications
+    depends_on:
+      - mysql
+      - elasticsearch
     links:
-        - postgres
-        - elasticsearch
+      - mysql
+      - elasticsearch
     ports:
-        - "8080"
-postgres:
-    image: postgres
+      - "3000:3000"
+  mysql:
+    build: ./mysql
     environment:
-        - POSTGRES_USER=youruser
-        - POSTGRES_PASSWORD=yourpw
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: nodedock
+    volumes:
+      - mysql:/var/lib/mysql
     ports:
-        - "5432:5432"
-elasticsearch:
-    image: elasticsearch
-    environment:
-        ELASTICSEARCH_USER: youruser
-        ELASTICSEARCH_PASS: yourpw
+      - "3306:3306"
+  elasticsearch:
+    build: ./elasticsearch
+    volumes:
+      - elasticsearch:/usr/share/elasticsearch/data
     ports:
-        - "9200:9200"
+      - "9200:9200"
+volumes:
+  mysql:
+    driver: "local"
+  elasticsearch:
+    driver: "local"

@@ -1,16 +1,12 @@
-FROM node:0.10.38
+FROM node:6
 
-RUN mkdir /src
+WORKDIR /opt/app
 
+ENV NPM_CONFIG_LOGLEVEL warn
+RUN npm install
 RUN npm install -g nodemon
 
-# Define working directory
-WORKDIR /src
-ADD package.json /src/package.json
-RUN npm install
+# COPY . /opt/app
 
-# Expose port
-EXPOSE  8080
-
-# Run app using nodemon
-CMD ["nodemon", "/src/index.js"]
+EXPOSE 3000
+CMD [ "nodemon", "-L", "/opt/app/bin/www" ]
