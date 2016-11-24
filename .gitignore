@@ -1,15 +1,5 @@
 Desktop.ini
-newrelic_agent.log
 ._*
 Thumbs.db
-
-# Application specific files
-npm-debug.log
-#PHPStorm
 .idea
-
-#code coverage
-node/node_modules
 .DS_Store
-
-node/npm-debug.log
