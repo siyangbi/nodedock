@@ -1,14 +1,14 @@
 # Nodedock
-Nodedock is a Docker nodejs development environment. It facilitate running **nodejs** Apps on **Docker**. 
+Nodedock is a Docker nodejs development environment. It facilitates running **nodejs** Apps on **Docker**. 
 
 ### Supported Software (Containers)
 
 - **Database Engines:**
 	- MySQL
 - **NoSQL Engines:**
-	- Redis
+	- Redis[todo]
 	- ElasticSearch
-- **Message Queueing Systems:**
+- **Message Queueing Systems:** [todo]
 	- RabbitMQ
 
 ## Installation
