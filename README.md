@@ -32,9 +32,9 @@ git submodule add https://github.com/siyangbi/nodedock.git
     - test
     - package.json
 ```
+> You can follow the [nodedock-example](https://github.com/siyangbi/nodedock-example) to setup your project as well
 
-
-2 - Run your docker-compose command
+2 - Run your docker-compose command inside nodedock folder
 
 ```
 docker-compose up 
