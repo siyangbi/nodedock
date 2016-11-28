@@ -22,7 +22,7 @@ git submodule add https://github.com/siyangbi/nodedock.git
 >If you are not already using Git for your nodejs project, you can use `git clone` instead of `git submodule`.
 
 
-1 - Setup project folder structure like this:
+2 - Setup project folder structure like this:
 
 ```
 - project
@@ -34,7 +34,7 @@ git submodule add https://github.com/siyangbi/nodedock.git
 ```
 > You can follow the [nodedock-example](https://github.com/siyangbi/nodedock-example) to setup your project as well
 
-2 - Run your docker-compose command inside nodedock folder
+3 - Run your docker-compose command inside nodedock folder
 
 ```
 docker-compose up 
