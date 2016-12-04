@@ -33,6 +33,12 @@ services:
       - elasticsearch:/usr/share/elasticsearch/data
     ports:
       - "9200:9200"
+  kibana:
+    build: ./kibana
+    environment:
+       - ELASTICSEARCH_URL=http://elasticsearch:9200
+    ports:
+      - "5601:5601"
 volumes:
   mysql:
     driver: "local"
