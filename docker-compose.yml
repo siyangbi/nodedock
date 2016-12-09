@@ -36,8 +36,16 @@ services:
        - ELASTICSEARCH_URL=http://elasticsearch:9200
     ports:
       - "5601:5601"
+  redis:
+    build: ./redis
+    volumes:
+      - redis:/data
+    ports:
+      - "6379:6379"
 volumes:
   mysql:
     driver: "local"
   elasticsearch:
+    driver: "local"
+  redis:
     driver: "local"
