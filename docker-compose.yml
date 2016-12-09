@@ -13,9 +13,6 @@ services:
     depends_on:
       - mysql
       - elasticsearch
-    links:
-      - mysql
-      - elasticsearch
     ports:
       - "3000:3000"
   mysql:
